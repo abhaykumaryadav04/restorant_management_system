@@ -1,5 +1,7 @@
 package com.a4b.rest_management.restorant.entity;
 
+import java.math.BigDecimal;
+
 import com.a4b.rest_management.restorant.ennummeration.Available;
 
 import jakarta.persistence.Entity;
@@ -20,7 +22,7 @@ public class MenuItems {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id;
-    private double price;
+    private BigDecimal price;
     private String description;
     @Enumerated(EnumType.STRING)
     private Available isAvailable;
