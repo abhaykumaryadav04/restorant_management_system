@@ -1,7 +1,11 @@
 package com.a4b.rest_management.model;
 
+import com.a4b.rest_management.ennumeration.Role;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -15,7 +19,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor 
 @AllArgsConstructor 
 @Builder 
-public class Customer {
+public class User {
     @Id 
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,5 +30,6 @@ public class Customer {
     private String phoneName;
     @Column (nullable = false)
     private String password;
-
+     @Enumerated(EnumType.STRING)
+    private Role role;
 }

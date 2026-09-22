@@ -22,6 +22,6 @@ public class Cart {
    private Long id;
    @OneToOne
    @JoinColumn (name = "CustomerId")
-   private Customer customer;
+   private User customer;
    
 }
