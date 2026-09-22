@@ -36,7 +36,7 @@ public class Restaurant {
     private String address;
     private String phoneNo;
     @OneToMany(mappedBy = "restaurant")
-    private List<MenuItems> menuItems;
+    private List<MenuCatagory> menuCatagories;
     private Double latitude;
     private Double longitude;
     @ManyToOne

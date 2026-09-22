@@ -18,7 +18,7 @@ import lombok.Data;
 @Entity
 @Data
 @Builder
-public class MenuItems {
+public class MenuItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id;
@@ -29,4 +29,9 @@ public class MenuItems {
     @ManyToOne
     @JoinColumn(name = "restaurant_id")
     private Restaurant restaurant;
+    private String imageUrl;
+      private boolean vegetarian;
+       @ManyToOne
+    @JoinColumn(name = "categoryId", nullable = false)
+    private MenuCatagory category;
 }
