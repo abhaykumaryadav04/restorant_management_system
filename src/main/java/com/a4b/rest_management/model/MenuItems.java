@@ -1,8 +1,8 @@
-package com.a4b.rest_management.restorant.entity;
+package com.a4b.rest_management.model;
 
 import java.math.BigDecimal;
 
-import com.a4b.rest_management.restorant.ennummeration.Available;
+import com.a4b.rest_management.ennumeration.Available;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;

@@ -1,6 +1,4 @@
-package com.a4b.rest_management.cart.model;
-
-import com.a4b.rest_management.user.model.Customer;
+package com.a4b.rest_management.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

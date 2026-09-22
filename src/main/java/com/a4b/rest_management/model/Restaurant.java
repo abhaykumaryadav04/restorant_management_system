@@ -1,8 +1,9 @@
-package com.a4b.rest_management.restorant.entity;
+package com.a4b.rest_management.model;
 
 import java.util.List;
 
-import com.a4b.rest_management.restorant.ennummeration.IsOPen;
+import com.a4b.rest_management.ennumeration.IsOPen;
+import com.a4b.rest_management.model.MenuItems;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
