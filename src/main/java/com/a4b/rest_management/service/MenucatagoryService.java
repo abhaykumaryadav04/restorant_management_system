@@ -9,4 +9,5 @@ public interface MenucatagoryService {
 
     MenuCatagory createMenuCatagory(MenuCatagoryRequest request);
     List<MenuCatagory> getCatagoriesByRestaurant(Long restaurantId);
+
 }

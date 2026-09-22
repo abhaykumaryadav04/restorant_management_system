@@ -1,6 +1,6 @@
 package com.a4b.rest_management.model;
 
-import java.math.BigDecimal;
+
 
 import com.a4b.rest_management.ennumeration.Available;
 
@@ -22,7 +22,7 @@ public class MenuItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id;
-    private BigDecimal price;
+    private Double price;
     private String description;
     @Enumerated(EnumType.STRING)
     private Available isAvailable;
