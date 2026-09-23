@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -23,5 +24,7 @@ public class Cart {
    @OneToOne
    @JoinColumn (name = "CustomerId")
    private User customer;
-   
+   @ManyToOne 
+   @JoinColumn (name = "restaurantId")
+   private Restaurant restaurant;
 }
